@@ -1,23 +1,40 @@
-.top-bar{
-    height: 54px;
-    width: 100%;
-}
+
 .page-container{
     margin-top: 0;
     min-height: 200vh;
+    display: contents;
 }
 
-.gradient-left{
-
-}
-.gradient-right{
-    width: 1408px;
-    height: 1408px;
-    flex-shrink: 0;
-    border-radius: 1408px;
-    
-    filter: blur(92px);
-    left: 842px;
-    bottom: 211px;
+.bottom-bar{
     position: absolute;
+}
+
+@media (min-width: 1600px) {
+    .bottom-bar {
+        top: 667px;
+        left: 1094px;
+        width: 600px;
+        height: 349px;
+
+    }
+}
+
+/* for tablets */
+@media (max-width: 1599px) and (min-width: 834px) {
+    .bottom-bar {
+        top: 667px;
+        left: 217px;
+        width: 600px;
+        height: 349px;
+    }
+}
+
+/* for phones */
+@media (max-width: 833px) {
+    .bottom-bar {
+        left: 0px;
+        top: 505px;
+        width: 100%;
+        height: 349px;
+    }
 }

@@ -1,14 +1,19 @@
 <div class="container">
-    <img src="../../assets/prizes.svg" alt="Logo" class="logo-image" loading="lazy">
+    <div class="logo-image"></div>
+    <!-- <img src="../../assets/prizes.svg" alt="Logo" class="logo-image" loading="lazy"> -->
     <!-- use that mid frame when on desktops -->
     <div class="mid-frame">
-        <p><span class="bold-text">Black Friday</span>, <span class="normal-text"> 24-27 Nov</span> </p>
+        <p>
+            <span class="bold-text">Black Friday</span>
+            <span class="date-text" *ngIf="winWidth>900">, 24-27 Nov</span>
+        </p>
         <img src="../../assets/dot.svg" alt="Logo" class="dot">
         <p><span class="yellow-text">10%OFF</span></p>
         <img src="../../assets/dot.svg" alt="Logo" class="dot">
-        <p><span class="normal-text">Use code</span>
+        <p>
+            <span class="code-text" *ngIf="winWidth>420">Use code</span>
             <span class="yellow-text"> 10FRIDAY</span>
-            <span class="normal-text"> at checkout</span>
+            <span class="checkout-text" *ngIf="winWidth>900"> at checkout</span>
         </p>
     </div>
     <div class="button-container">

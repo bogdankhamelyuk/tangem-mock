@@ -1,12 +1,26 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import {getWindow} from "ssr-window";
+import { CommonModule } from '@angular/common';  
 
 @Component({
   selector: 'app-top-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './top-bar.component.html',
   styleUrl: './top-bar.component.css'
 })
-export class TopBarComponent {
+export class TopBarComponent  {
+  public winWidth: number = 0;
+  constructor() {
+    this.setWidth();
+  }
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.setWidth()
+  }
+
+  setWidth(){
+    this.winWidth = getWindow().innerWidth;
+  }
 
 }

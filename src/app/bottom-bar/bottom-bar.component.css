@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    background: url(../../assets/frame-1321314383@3x.png) 100% 120.951% no-repeat;
+    /* background-repeat: no-repeat; */
+    background-position: left;
+    background-size: auto 200%, cover;
+}
+
+.bold-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 50.6px */
+    letter-spacing: -1.84px;
+}
+
+
+@media (min-width: 834px) {
+    .container {
+        border-radius: 16px;
+    }
+}
+
+/* for phones */
+@media (max-width: 833px) {
+    .container {
+        border-radius: 0px;
+    }
+}
