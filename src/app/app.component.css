@@ -3,6 +3,21 @@
     width: 100%;
 }
 .page-container{
-    display: flex;
     margin-top: 0;
+    min-height: 200vh;
+}
+
+.gradient-left{
+
+}
+.gradient-right{
+    width: 1408px;
+    height: 1408px;
+    flex-shrink: 0;
+    border-radius: 1408px;
+    
+    filter: blur(92px);
+    left: 842px;
+    bottom: 211px;
+    position: absolute;
 }

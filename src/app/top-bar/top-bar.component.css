@@ -2,5 +2,91 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, #101010 0%, #0B0B0B 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
+
+.mid-frame {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 535px;
+    height: 20px;
+    color: var(--Text-Night-Primary-1, #FFF);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    width: 3px;
+    height: 3px;
+}
+.button-container {
+    max-width: 115px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFF;
+
+}
+.shop-button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: inherit;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    padding: 10px 14px;
+    align-items: flex-start;
+    gap: 10px;
+}
+.bold-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.048px;
+}
+.normal-text{
+    color: var(--Text-Night-Primary-1, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.048px;
+}
+
+
+.yellow-text{
+    color: #D7A830;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: -0.64px;
+}
+/* for desktops */
+@media (min-width: 1728px) {
+    .logo-image {
+        width: 212px;
+    }
+}
+/* for tablets */
+@media (max-width: 1727px) and (min-width: 834px) {
+    .logo-image {
+        width: 185px;
+
+    }
+}
+/* for phones */
+@media (max-width: 833px) and (orientation: portrait) {
+    .logo-image {
+        width: 159px;
+
+    }
 }
