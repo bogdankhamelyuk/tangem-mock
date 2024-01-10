@@ -1,0 +1,8 @@
+.top-bar{
+    height: 54px;
+    width: 100%;
+}
+.page-container{
+    display: flex;
+    margin-top: 0;
+}
