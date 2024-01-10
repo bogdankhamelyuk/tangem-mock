@@ -20,27 +20,30 @@
     justify-content: center;
     align-items: center;
 }
+.close{
+    width: 24;
+    height: 24;
+    cursor: pointer;
+}
 .dot{
     width: 3px;
     height: 3px;
 }
 .button-container {
+   display: flex;
+   margin-right: 10px; /*to avoid vert scroller closing component*/
+}
+.shop-button {
     max-width: 115px;
     height: 38px;
     flex-shrink: 0;
     border-radius: 100px;
     background: #FFF;
-
-}
-.shop-button {
-    width: 100%;
-    height: 100%;
     border: none;
-    border-radius: inherit;
-    background: transparent;
     cursor: pointer;
     display: flex;
     padding: 10px 14px;
+    align-items: center;
     align-items: flex-start;
     gap: 10px;
 }
@@ -80,13 +83,11 @@
 @media (max-width: 1727px) and (min-width: 834px) {
     .logo-image {
         width: 185px;
-
     }
 }
 /* for phones */
 @media (max-width: 833px) and (orientation: portrait) {
     .logo-image {
         width: 159px;
-
     }
 }
