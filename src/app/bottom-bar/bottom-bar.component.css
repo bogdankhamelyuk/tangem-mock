@@ -3,11 +3,17 @@
     height: 100%;
     display: flex;
     background: url(../../assets/frame-1321314383@3x.png) 100% 120.951% no-repeat;
-    /* background-repeat: no-repeat; */
-    background-position: left;
+    justify-content: flex-end;
+    background-position: center;
     background-size: auto 200%, cover;
 }
-
+.text-info{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
 .bold-text{
     color: #FFF;
     text-align: center;
@@ -19,16 +25,48 @@
     /* 50.6px */
     letter-spacing: -1.84px;
 }
+.gold-text{
+    background: linear-gradient(to right, #7D5317, #EDDF95);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 44px */
+    letter-spacing: -1.6px;
+}
+.shop-now-button{
+    display: inline-flex;
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 0.3em;
+    border-radius: 14px;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.10);
+    border: none;
+    cursor: pointer;
+}
+.normal-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 20.8px */
+    letter-spacing: 0.08px;
+}
 
-
-@media (min-width: 834px) {
+@media (min-width: 741px) {
     .container {
         border-radius: 16px;
     }
 }
 
 /* for phones */
-@media (max-width: 833px) {
+@media (max-width: 740px) {
     .container {
         border-radius: 0px;
     }

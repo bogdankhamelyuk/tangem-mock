@@ -19,6 +19,6 @@ export class AppComponent {
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop || 0;
 
     // Adjust the opacity based on the scroll position
-    this.bottomBarOpacity = Math.min(scrollPosition / 200, 1); 
+    this.bottomBarOpacity = Math.min(scrollPosition / 100, 1); 
   }
 }

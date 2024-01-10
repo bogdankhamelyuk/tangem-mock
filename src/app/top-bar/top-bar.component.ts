@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import {getWindow} from "ssr-window";
 import { CommonModule } from '@angular/common';  
 
@@ -22,5 +22,4 @@ export class TopBarComponent  {
   setWidth(){
     this.winWidth = getWindow().innerWidth;
   }
-
 }
