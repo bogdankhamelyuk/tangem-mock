@@ -14,6 +14,13 @@
     flex-direction: column;
     justify-content: center;
 }
+.close {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    margin: 10px;
+}
 .bold-text{
     color: #FFF;
     text-align: center;

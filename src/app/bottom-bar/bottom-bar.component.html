@@ -1,4 +1,5 @@
-<div class="container">
+<div *ngIf="bottomBarVisible" class="container">
+    <img src="../../assets/Close.svg" alt="Logo" class="close" (click)="closeBottomBar()">
     <div class="text-info">
         <p><span class="bold-text">Black Friday</span></p>
         <p><span class="gold-text">10%OFF</span></p>
