@@ -8,3 +8,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Description
 This project is made using Angular. It uses Angular's local storage to store user preference concerning pop-ups. It also uses observables to dynamically, asynchronically render the components.  
+
+## Example
+![alt](https://github.com/bogdankhamelyuk/tangem-mock/blob/main/ezgif-4-57b44d2641.gif)
